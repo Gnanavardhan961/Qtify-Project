@@ -1,0 +1,19 @@
+.section {
+  padding: 20px;
+}
+
+.header h2 {
+  margin-bottom: 16px;
+}
+
+.tabs .MuiTab-root {
+  text-transform: none;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.tabs .Mui-selected {
+  color: #34c94b;
+  font-weight: 600;
+  border-bottom: 2px solid #34c94b;
+}
