@@ -1,17 +1,16 @@
 .carousel {
   width: 100%;
   padding: 10px 0;
+  position: relative; /* ensure navigation buttons are above slides */
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-  pointer-events: auto; 
-  color: #34c94b; 
-  pointer-events: auto !important; /* fix Cypress click issue */
+  pointer-events: auto !important; /* make buttons clickable */
   color: #34c94b !important;
+  z-index: 10; /* ensure buttons are above slides */
 }
 
 .swiper-slide {
-  width: auto; 
-  width: auto !important;
+  width: auto !important; /* allow dynamic slide width */
 }
