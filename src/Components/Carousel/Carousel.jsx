@@ -11,7 +11,11 @@ function Carousel({ items, renderItem }) {
       modules={[Navigation]}
       spaceBetween={20}
       slidesPerView={"auto"}
-      navigation
+      navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
+      onSwiper={(swiper) => {
+        swiper.navigation.init();
+        swiper.navigation.update();
+      }}
       breakpoints={{
         320: { slidesPerView: 1.2 },
         640: { slidesPerView: 2.2 },
