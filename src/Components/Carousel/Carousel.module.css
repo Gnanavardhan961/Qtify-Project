@@ -5,10 +5,13 @@
 
 .swiper-button-next,
 .swiper-button-prev {
+  pointer-events: auto; 
+  color: #34c94b; 
   pointer-events: auto !important; /* fix Cypress click issue */
   color: #34c94b !important;
 }
 
 .swiper-slide {
+  width: auto; 
   width: auto !important;
 }
