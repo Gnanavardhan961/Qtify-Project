@@ -6,7 +6,7 @@ import styles from "./Section.module.css";
 
 function Section({ title, api }) {
   const [albums, setAlbums] = useState([]);
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(true); // start collapsed
 
   useEffect(() => {
     axios.get(api)
@@ -22,7 +22,7 @@ function Section({ title, api }) {
           className={styles.collapseBtn}
           onClick={() => setCollapsed(!collapsed)}
         >
-          {collapsed ? "Show All" : "Collapse"}
+          {collapsed ? "Show All" : "Collapse"} {/* match Cypress expectation */}
         </button>
       </div>
 

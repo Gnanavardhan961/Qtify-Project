@@ -1,4 +1,9 @@
-.carousel {
-  width: 100%;
-  padding: 10px 0;
+.swiper-button-next,
+.swiper-button-prev {
+  pointer-events: auto; 
+  color: #34c94b; 
+}
+
+.swiper-slide {
+  width: auto; 
 }
